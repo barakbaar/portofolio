@@ -1,0 +1,124 @@
+body{
+    font-family: 'rubik',sans-serif;
+    background-color: black;
+    background-image: url(background-top.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: -78px;
+    display: flex;
+}
+.nama{
+    font-size: 39px;
+}
+h1{
+    color: #bbed2f;
+}
+.Muha{
+    font-family: 'Cormorant SC',sans-serif;
+    font-weight: 400;
+    position: absolute;
+    left: 5vh;
+    top: 45vh;
+}
+.Mma,.aul{
+    font-style: italic;
+}
+.Akbar{
+    font-family: 'Cormorant SC',sans-serif;
+    font-weight: 600;
+    position: absolute;
+    left: 5vh;
+    top: 60vh;
+}
+.Maulana{
+    font-family: 'Cormorant SC',sans-serif;
+    font-weight: 400;
+    position: absolute;
+    left: 5vh;
+    top: 75vh;
+}
+.about{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 110vh;
+}
+p{
+    color: white;
+    margin: 20vh 700px 10px 60px;
+    text-align: justify;
+    font-weight: 100;
+}
+.bold{
+    left: 20px;
+    font-weight: 550;
+}
+.menu-button{
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 4vh;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.menu-bar{
+    width: 50px;
+    height: 3px;
+    background: #bbed2f;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+.menu-bar::before,
+.menu-bar::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+.menu-bar::before {
+    transform: translateY(-16px);
+}
+.menu-bar::after {
+    transform: translateY(16px);
+}
+.menu-button.open .menu-bar {
+    transform: translateX(-50px);
+    background: transparent;
+}
+.menu-button.open .menu-bar::before {
+    transform: rotate(45deg) translate(35px, -35px);
+    background: #fff;
+}
+.menu-button.open .menu-bar::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+    background: #fff;
+}
+
+.icon-home, .icon-person {
+    display: flex;
+    position: absolute;
+    color: #fff;
+    top: 40px;
+    left: 20vh;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 24px;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+.icon-person{
+    left: 30vh;
+}
+.icon-home.open, .icon-person.open {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all .2s ease-in-out;
+}
